@@ -1,0 +1,18 @@
+#btn {
+
+   width: 50px;
+   height: 50px;
+}
+/* 
+#btn:hover{
+   transform: 0.3s;
+   width: 60px;
+} */
+
+#ul_list li{
+   width: 100%;
+   margin: 10px;
+   background-color: antiquewhite;
+   display: block;
+}
+
