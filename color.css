@@ -1,18 +1,178 @@
-#btn {
+* {
+   margin: 0;
+   padding: 0;
+}
 
+body {
+   background-color: black;
+   color: rgb(255, 255, 255);
+}
+
+.text {
+   text-align: center;
+}
+
+.header {
+   display: flex;
+   align-items: space-between;
+   justify-content: space-between;
+   /* background-color: black; */
+   width: 100%;
+}
+
+.menu img {
+   margin: 5px;
    width: 50px;
    height: 50px;
-}
-/* 
-#btn:hover{
-   transform: 0.3s;
-   width: 60px;
-} */
+   cursor: pointer;
+   border-radius: 12px;
+   background-color: rgb(47, 48, 48);
 
-#ul_list li{
-   width: 100%;
+}
+
+#dark {
+   margin-top: 10px;
+   margin-right: 5px;
+   margin-left: 20px;
+   cursor: pointer;
+   border-radius: 12px;
+   background-color: rgb(47, 48, 48);
+
+}
+
+.btn_dark {
+   background-color: white;
+   color: black;
+   cursor: pointer;
+}
+
+.btn_dark .content {
+   background-color: white;
+   color: black;
+}
+
+.btn_dark .navbar ul li a {
+   color: black;
+}
+
+.navbar ul li {
+   display: none;
+   padding: 20px;
+}
+
+.navbar a {
+   text-decoration: none;
+   color: white;
+   text-transform: uppercase;
+}
+
+.main {
+   display: flex;
+   justify-content: center;
+}
+
+.content {
+   background-color: rgb(44, 41, 41);
+   color: white;
+   border-radius: 15px;
+   text-align: center;
+   margin: 20px;
+   width: 400px;
+
+}
+
+.content h1 {
+   padding: 10px;
+}
+
+.content p {
+   font-size: 18px;
+   padding: 10px;
+   margin: 20px;
+}
+
+#download {
+   width: 150px;
    margin: 10px;
-   background-color: antiquewhite;
-   display: block;
+   height: 25px;
+   background-color: rgb(41, 41, 255);
+   color: white;
+   border-radius: 10px;
+   border: 1px solid rgb(41, 41, 255);
+   cursor: pointer;
+
 }
 
+.add ul li {
+   display: inline-block;
+   color: white;
+}
+
+.add a:hover {
+   text-decoration: underline;
+
+}
+
+.detail {
+   display: flex;
+   justify-content: center;
+   margin: 20px;
+}
+
+.education {
+   margin: 10px;
+   width: 100%;
+   height: auto;
+   border: 2px solid red;
+}
+
+.education h2 {
+   margin-top: 10px;
+   text-align: center;
+}
+
+.education p {
+   margin: 15px;
+   text-align: center;
+}
+
+.footer{
+   height: 50px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+@media(max-width:500px) {
+   .detail {
+      display: block;
+      margin: 50px;
+   }
+   
+   .education {
+      width: 100%;
+      /* width: 220px; */
+   }
+}
+
+@media (max-width:600px) {
+   .header {
+      display: block;
+   }
+
+   .navbar ul li {
+      height: 10px;
+      width: 90%;
+      background-color: rgb(255, 255, 255);
+      border: 0.1px solid black;
+   }
+
+   .navbar a {
+      color: black;
+      text-align: center;
+   }
+
+   .navbar a:hover {
+      text-decoration: overline;
+
+   }
+}
