@@ -1,14 +1,13 @@
 $(document).ready(function () {
-
-    $("#btn").mouseleave(function () {
-        $(this).css("transform", "");
-        $(this).css("width", "");
-    })
-
-    $("#btn").click(function () {
-        $("li").css("width", "50px");
-        $("li").css("display", "inline-block");
-        $("li").css("padding", "20px");
+    $("#menu").click(function () {
+        var a = $(".navbar").toggleClass("add");
+        console.log(a);
 
     });
+
+    $("#dark").click(function () {
+        $("body").toggleClass("btn_dark");
+
+    });
+
 });
