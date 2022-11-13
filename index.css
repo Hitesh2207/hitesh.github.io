@@ -1,0 +1,61 @@
+*{margin: 0;
+padding:0;
+}
+
+
+button{
+    margin: 10px;
+    width: 100px;
+    height: 50px;
+    background-color: blue;
+    border: 2px solid blue;
+    border-radius: 12ch;
+
+}
+.back{
+    text-decoration: none;
+    color: white;
+}
+
+.text{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.project{
+    display: flex;
+    flex-wrap: wrap;
+}
+.pro{
+    /* text-align: center; */
+    margin: 10px;
+    width: 100%;
+    height: auto;
+    background-color: rgba(2, 1, 1, 0.646);
+}
+
+.pro h1{
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+.pro p{
+    padding: 10px;
+    
+}
+
+.pro a{
+    padding: 10px;
+    color: blue;
+    
+}
+@media (max-width:400px) {
+    .project{
+        display: block;
+    }
+    
+    .pro{
+    width: 300px;
+    height: auto;
+    }
+}

@@ -1,0 +1,308 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   color: rgba(255, 255, 255, 0.986);
+   background-position: center;
+   width: 100%;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-image: url(./image/bg.png);
+
+}
+
+
+.text {
+   text-align: center;
+}
+
+.header {
+   background-color: rgba(8, 4, 4, 0.425);
+   display: flex;
+   align-items: space-between;
+   justify-content: space-between;
+   width: 100%;
+}
+
+.menu img {
+   margin: 5px;
+   width: 50px;
+   height: 50px;
+   cursor: pointer;
+   border-radius: 12px;
+   background-color: rgba(14, 20, 20, 0.619);
+
+}
+
+/* #dark {
+   margin-top: 10px;
+   margin-right: 5px;
+   margin-left: 20px;
+   cursor: pointer;
+   border-radius: 12px;
+   background-color: rgb(47, 48, 48);
+
+} */
+
+/* .btn_dark {
+   background-color: rgb(0, 0, 0);
+   color: rgb(255, 255, 255);
+   cursor: pointer;
+} */
+
+/* .btn_dark .content {
+   background-color: white;
+   color: black;
+} */
+
+/* .btn_dark .navbar ul li a {
+   color: rgb(255, 117, 4);
+} */
+
+.navbar ul li {
+   display: none;
+   padding: 20px;
+}
+
+.navbar a {
+   text-decoration: none;
+   color: rgb(254, 254, 254);
+   text-transform: uppercase;
+}
+
+.main {
+   margin-top: 50px;
+   display: flex;
+   justify-content: center;
+}
+
+.content {
+   /* background-color: rgba(44, 41, 41, 0.87); */
+   color: rgb(255, 255, 253);
+   border-radius: 15px;
+   text-align: center;
+   margin: 20px;
+   width: 100%;
+
+}
+
+.content h1 {
+   padding: 10px;
+}
+
+.content p {
+   font-size: 18px;
+   padding: 10px;
+   margin: 20px;
+}
+
+#download {
+   width: 150px;
+   margin: 10px;
+   height: 25px;
+   background-color: rgb(41, 41, 255);
+   color: white;
+   border-radius: 10px;
+   border: 1px solid rgb(41, 41, 255);
+   cursor: pointer;
+
+}
+
+#download a {
+   color: white;
+   text-decoration: none;
+}
+
+#download:hover {
+   transition: 0.5s;
+   box-shadow: 5px 5px 0px 0px;
+}
+
+.add ul li {
+   display: inline-block;
+   color: rgb(252, 252, 252);
+}
+
+.add a:hover {
+   transition: 0.5s;
+   color: rgb(249, 31, 2);
+   text-decoration: underline;
+
+}
+
+/* .btn_dark .detail{
+   color: rgb(255, 251, 251);
+
+} */
+.detail {
+   display: flex;
+   justify-content: center;
+   margin: 20px;
+   color: rgb(255, 255, 255);
+}
+
+.education {
+   width: 100%;
+   height: auto;
+   margin: 2px;
+   border: 2px solid rgb(240, 220, 220);
+}
+
+.education:hover {
+   background-color: rgba(26, 22, 22, 0.395);
+   transition: 0.5s;
+}
+
+.education h2 {
+   margin-top: 10px;
+   text-align: center;
+}
+
+.education p {
+   margin: 15px;
+   text-align: center;
+}
+
+.links {
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   margin: 5px;
+}
+
+.btn {
+   width: 150px;
+   height: 50px;
+   background-color: red;
+   border: 1px solid red;
+   cursor: pointer;
+}
+
+#mail {
+   width: 150px;
+   height: 50px;
+   background-color: red;
+   border: 1px solid red;
+   cursor: pointer;
+   color: white;
+}
+
+
+#contact {
+   width: 150px;
+   height: 50px;
+   background-color: red;
+   border: 1px solid red;
+   cursor: pointer;
+   color: white;
+}
+
+.btn a {
+   text-decoration: none;
+   color: white;
+   font-size: 16px;
+}
+
+.btn:hover {
+   transition: 0.5s;
+   width: 160px;
+   color: rgb(255, 255, 255);
+   box-shadow: 5px 5px 2px 1px rgba(241, 241, 244, 0.639);
+}
+
+.footer {
+   height: 50px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.mail {
+   background-color: rgb(255, 253, 250);
+   display: block;
+   color: rgb(0, 0, 0);
+
+}
+
+.box {
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   margin: 5px;
+   margin-bottom: 50px;
+
+}
+
+.m h4{
+   display: none;
+
+}
+
+.p {
+   display: none;
+}
+.show h4{
+   display: block;
+}
+
+
+.show_p {
+   display: block;
+}
+
+.back {
+   width: 100px;
+   height: 100px;
+background-color: rgb(24, 24, 255);
+
+}
+@media(max-width:500px) {
+   .detail {
+      display: block;
+      margin: 50px;
+   }
+
+   .education {
+      width: 100%;
+
+   }
+
+   .btn {
+      width: 100px;
+   }
+
+
+}
+
+@media(max-width:300px){
+   .links{
+      width: 100%;
+      display: block;
+   }
+}
+
+@media (max-width:600px) {
+   .header {
+      display: block;
+   }
+
+   .navbar ul li {
+      height: 10px;
+      width: 100%;
+      color: rgb(255, 255, 255);
+      background-color: rgba(255, 255, 255, 0.386);
+      border: 0.1px solid black;
+   }
+
+   .navbar a {
+      color: rgb(255, 253, 253);
+      text-align: center;
+   }
+
+   .navbar a:hover {
+      text-decoration: overline;
+      color: rgb(255, 1, 1);
+   }
+}
